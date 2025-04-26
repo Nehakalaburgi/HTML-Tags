@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!--Title Element-->
+    <title>Doreamon</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="do.png">
+
+    <style>
+    img {
+    width: 1920px;
+    height: 1080px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 8px 4px 10px rgb(137, 130, 130);
+    object-position: 50% 50%;
+    }
+    picture {
+        width: 100px;
+        height: 50%;
+        object-position: 50% 50%;
+    }
+    body {
+        background-color: rgb(177, 200, 248);
+    }
+    .list {
+        font-family:monospace;
+        color: brown;
+    }
+    table {
+        text-align: center;
+        color: azure;
+        border-style: double;
+        border-color: black;
+        background-color: rgb(184, 136, 229) ;
+    }
+    th {
+        color: black;
+    }
+    td {
+        text-align: center;
+        color: rgb(110, 8, 11);
+    }
+    a:link {
+        color: black;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;color: blue;font-family: Lilita One;font-size: 100px;">Doreamon</h1>
+    <img src="Doremon.jpeg" alt="Doreamon" usemap="#Img">
+
+    <!--Image Mapping-->
+    <map name="Img">
+        <area shape="rect" coords="1369,370,1599,629" alt="Nobita" href="https://doraemon.fandom.com/wiki/Nobita_Nobi">
+        <area shape="rect" coords="1545,53,1783,355" alt="Suneo" href="https://doraemon.fandom.com/wiki/Suneo_Honekawa">
+        <area shape="rect" coords="322,8,831,344" alt="Gian" href="https://doraemon.fandom.com/wiki/Takeshi_Gouda">
+        <area shape="rect" coords="563,327,826,624" alt="Shizuka" href="https://doraemon.fandom.com/wiki/Shizuka_Minamoto">
+        <area shape="rect" coords="820,289,1279,700" alt="Doreamon" href="https://doraemon.fandom.com/wiki/Doraemon">
+    </map>
+<hr>
+    <!--Picture Element-->
+    <picture>
+        <source media="(min-width:650px)" srcset="do.png">
+        <source media="(min-width:465px)" srcset="scenery.jpeg">
+        <img src="Doremon.jpeg" alt="image">
+    </picture>
+<hr>
+    <!--Division tag-->
+    <div class="list">
+        <!--Discription list-->
+    <dl>
+        Discription List
+        <dt>Doreamon</dt>
+           <dd>- Is a RoboCat</dd>
+        <dt>Nobita Nobi</dt>
+            <dd>- Is a Human</dd>
+    </dl>
+
+    <!--Ordered list-->
+    <ol>
+        Ordered List
+        <li>Nobita</li>
+        <li>Shizuka</li>
+        <li>Gian</li>
+        <li>Suneo</li>
+    </ol>
+
+    <!--Unordered list-->
+    <ul>
+        Unordered List
+        <li>Nobita</li>
+        <li>Shizuka</li>
+        <li>Gian</li>
+        <li>Suneo</li>
+    </ul>
+    </div>
+
+    <hr>
+    <!--Tables in HTML-->
+    <table border="5px black">
+        <tr>
+            <th>Relation</th>
+            <th><a link href="nobita.html" >Nobita</a></th>
+            <th><a link href="shizuka.html">Shizuka</a></th>
+            <th><a link href="gian.html">Gian</a></th>
+            <th><a link href="suneo.html">Suneo</a></th>
+        </tr>
+        <tr>
+            <td>Father</td>
+            <td>Nobisuke Nobi</td>
+            <td>Yoshio Minamoto</td>
+            <td>Mr. Gouda</td>
+            <td>Mr. Honekawa</td>
+        </tr>
+        <tr>
+            <td>Mother</td>
+            <td>Tamako Nobi</td>
+            <td>Michiko Minamoto </td>
+            <td>Mrs. Gouda</td>
+            <td>Mrs. Honekawa</td>
+        </tr>
+    </table>
+</body>
+</html>
