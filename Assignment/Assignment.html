@@ -22,15 +22,21 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    img {
+    .container img {
     width: 1200px;
     height: 675px;
     object-fit:cover;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 8px 4px 10px rgb(137, 130, 130);
-    align-items: center;
     }
+
+    source {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    }
+
     body {
         background-color: rgb(177, 200, 248);
     }
@@ -61,6 +67,7 @@
     }
     </style>
 </head>
+
 <body>
     <div class="container">
     <h1 style="text-align: center;color: blue;font-family: Lilita One;font-size: 100px;">Doreamon</h1>
@@ -77,6 +84,7 @@
 </div>
 <hr>
     <!--Picture Element-->
+    <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 50px;"><b>Using Picture Element:-</b></h2>
     <picture>
         <source media="(min-width:650px)" srcset="do.png">
         <source media="(min-width:465px)" srcset="shizuka.jpeg">
@@ -87,9 +95,10 @@
 
     <!--Division tag-->
     <div class="list">
+        <h1><u>Lists in HTML:-</u></h1>
         <!--Discription list-->
     <dl>
-        <b><u>Discription List</u></b>
+        <b><u>Discription List:-</u></b>
         <dt>Doreamon</dt>
            <dd>- Is a RoboCat</dd>
         <dt>Nobita Nobi</dt>
@@ -98,7 +107,7 @@
 
     <!--Ordered list-->
     <ol>
-        <b><u>Ordered List</u></b>
+        <b><u>Ordered List:-</u></b>
         <li>Nobita</li>
         <li>Shizuka</li>
         <li>Gian</li>
@@ -107,7 +116,7 @@
 
     <!--Unordered list-->
     <ul>
-        <b><u>Unordered List</u></b>
+        <b><u>Unordered List:-</u></b>
         <li>Nobita</li>
         <li>Shizuka</li>
         <li>Gian</li>
