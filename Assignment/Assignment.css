@@ -1,0 +1,59 @@
+.container {
+    max-width: 1400px;
+    max-height: 1500px;
+    margin: 50px auto;
+    background-color: rgb(224, 231, 246);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .container img {
+  width: 1200px;
+  height: 675px;
+  object-fit:cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 8px 4px 20px rgb(137, 130, 130);
+  margin-left: 100px;
+  }
+
+  source {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  }
+
+  body {
+      background-color: rgb(177, 200, 248);
+  }
+  .list {
+      font-family:monospace;
+      color: brown;
+      font-size: 30px;
+  }
+  table {
+      width: 1500px;
+      height:200px;
+      text-align: center;
+      object-position: center;
+      color: azure;
+      border-style: double;
+      border-color: black;
+      background-color: rgb(184, 136, 229) ;
+  }
+  th {
+      color: black;
+  }
+  td {
+      text-align: center;
+      color: rgb(110, 8, 11);
+  }
+  a:link {
+      color: rgb(57, 35, 228);
+      font-family: Tagesschrift;
+  }
+
+  dd{
+    font-family: l;
+  }

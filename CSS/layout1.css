@@ -1,0 +1,30 @@
+h1 {
+    color: brown;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px;
+
+}
+
+body {
+    background-color: bisque;
+}
+
+nav {
+color: aliceblue;
+background-color: brown;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 4px 4px;
+}
+
+.container {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0 7px 7px;
+    border-color: black;
+    height: 400px;
+
+
+}
