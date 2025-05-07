@@ -3,10 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hi
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Pacifico&family=Tagesschrift&display=swap" rel="stylesheet">
+    <title>ToonToneStudios Application Form</title>
+    <link rel="icon" type="png" href="logo.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #1860a3;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            margin-bottom: 5px;
+        }
 
+        .logo {
+            width: 250px;
+        }
+        .text{
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        nav{
+            text-align: center;
+            background-color: #1860a3;
+            word-spacing: 10px;
+            margin-bottom: 5px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main{
+            background-color: rgb(203, 229, 253);
+            font-family: Tagesschrift;
+            border-radius: 10PX;
+        }
+
+        .container{
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgb(254, 254, 253);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,select,textarea{
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #6326f0;
+        }
+
+        label{
+            margin: 10px 0 5px;
+        }
+
+        button{
+            margin-top: 20px;
+            background-color: #5f68cc;
+            color: #f5eeee;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #8ba8e7;
+            color: black;
+        }
+
+        footer{
+            background-color:#1860a3;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: #faf3d7">
+    <!--Header-->
+    <header>
+        <div class="logo"><img class="logo" src="lo.png" alt="image"> </div>
+        <div class="text">
+        <h1 style="font-family: Pacifico;font-size: 50px;">ToonTone Studios</h1>
+        <h2 style="font-family: Tagesschrift;">Application form for Voice Artist Role</h2></div>
+    </header>
+
+    <!--navigation-->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">AboutUs</a> |
+        <a href="#">ContactUs</a> |
+        <a href="#">Portfolio</a> | 
+        <a href="#">FAQs</a> |
+        <a href="#">Blog/News</a>
+    </nav>
+
+    <!--main-->
+    <div class="container">
+        <main>
+            <h2>"Please complete the form by providing your details and submitting your audition for the voice artist role."</h2>
+            <br><br>
+
+        <form action="#" method="post">
+            <h3>1. Personal Information</h3>
+        <label for="fname">Full Name : </label>
+        <input type="text" id="fname" placeholder="Enter your Full Name" required>
+        <br>
+
+        Date of Birth : <input type="date">
+        <br>
+
+        <div>
+        <label for="choose">Gender: </label>
+
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="Others">Others</label></div>
+                <br>
+
+        Email : <input type="email" placeholder="youremail@gmail.com" required>
+        <br>
+
+        <label for="phone">Phone Number : </label>
+        <input type="number" id="phone" placeholder="0123456789">
+        <br>
+
+        
+        <label for="address">Address :</label>
+        <textarea name="address" id="address" rows="4" placeholder="write your address here"></textarea>
+        <br><br>
+
+            <h3>2. Professional Details</h3>
+
+        <label for="exp">Previous Experience : </label>
+        <textarea name="exp" id="exp" rows="3" placeholder="Experience Here" required></textarea>
+        <br>
+
+        <p>Languages Known :</p>
+        <label><input type="checkbox" name="options" value="Kannada"> Kannada </label>
+        <label><input type="checkbox" name="options" value="Hindi"> Hindi </label>
+        <label><input type="checkbox" name="options" value="English"> English </label>
+        <label><input type="checkbox" name="options" value="Marati"> Marati </label>
+        <label><input type="checkbox" name="options" value="Telugu"> Telugu </label>
+        <br>
+
+        <label for="availability">Preferred Work Type:</label>
+            <select id="availability" name="availability" required>
+                <option value="Please choose an option">--Select</option>
+                <option value="Freelance">Freelance</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Full-time">Full-time</option>
+            </select>
+
+            <label for="working-style">Willingness to Work:</label>
+            <select id="working-style" name="working-style" required>
+                <option value="select">--Select</option>
+                <option value="Remote">Remote</option>
+                <option value="On-site">On-site</option>
+                <option value="Hybrid">Hybrid</option>
+            </select>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .docx" required>
+
+            <label for="voice-sample">Upload Voice Sample:</label>
+            <input type="file" id="voice-sample" name="voice-sample" accept=".mp3, .wav" required>
+            <br>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the studio's Terms & Conditions
+            </label>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+        </main>
+    </div>
+    
+
+    <!--footer-->
+    <footer>
+        <p>Copyright &copy;2025</p>
+    </footer>
 </body>
 </html>
