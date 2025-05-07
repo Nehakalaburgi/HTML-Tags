@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Forms in html-->
+
+    <form action="#">
+        <!--input type text-->
+        <h2>Text Fields</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" value="Enter your First Name">
+        <br><br>
+
+        <label for="iname">Last Name:</label>
+        <input type="text" id="lname" value="Enter your Last Name">
+        <br><br>
+
+        Password: <input type="password" id="pass"><br><br>
+
+        Date of Birth:<input type="date">
+
+        <!--Submit-->
+        <input type="submit" value="Submit">
+
+        <!--input type text area-->
+        <h2>Text Area</h2>
+        <label for="message">Message</label>
+        <textarea rows="10" cols="60" name="blog">
+            Share your knowledge by writing your own blog.
+        </textarea>
+        <br><br>
+
+        <!--dropdown menu-->
+        <form method="post">
+            <label for="op">Select an Option</label>
+            <select id="op" name="Option">
+                <option value="Please choose an option">Select an Option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+            </select>
+        </form>
+        <br><br>
+
+        <!--Radio button-->
+        <h3>Radio Button</h3>
+        <div>
+        <input type="radio" id="op1" name="option" value="Option 1">
+        <label for="op1">Option 1</label>
+        <br>
+        <input type="radio" id="op2" name="option" value="Option 2">
+        <label for="op2">Option 2</label>
+        <br>
+        <input type="radio" id="op3" name="option" value="Option 3">
+        <label for="op3">Option 3</label>
+        <br>
+        <input type="radio" id="op4" name="option" value="Option 4">
+        <label for="op4">Option 4</label>
+        </div>
+        <br><br>
+    </form>
+
+    <form method="get">
+        <!--Check Box-->
+        <h3>Check Box</h3>
+        <label><input type="checkbox" name="options" value="1"> Option 1 </label><br>
+        <label><input type="checkbox" name="options" value="2"> Option 2 </label><br>
+        <label><input type="checkbox" name="options" value="3"> Option 3 </label><br>
+        <label><input type="checkbox" name="options" value="4"> Option 4 </label><br>
+        <br><br>
+
+        <!--Reset-->
+        <input type="reset"><br><br>
+        <!--Submit-->
+        <input type="submit" value="Click Here"><br><BR>
+    </form>
+
+    <form>
+        Select File:
+        <input type="file" name="fileupload" accept="image/*" />
+        <input type="submit" value="Submit"><br><BR>
+
+
+            <h3>Buttons</h3>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+            <input type="button" name="ok" value="Ok">
+            <input type="image" name="imagebutton" src="do.png">
+    </form>
+    
+</body>
+</html>
